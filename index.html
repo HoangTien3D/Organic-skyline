@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>p5.js Interactive Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <iframe
+        src="https://editor.p5js.org/HoangTien3D/full/y9Hcer3Iw"
+        title="p5.js Interactive Sketch"
+        class="sketch-frame"
+        allow="accelerometer; autoplay; camera; encrypted-media; geolocation; gyroscope; microphone; midi; xr-spatial-tracking"
+        allowfullscreen
+      ></iframe>
+
+      <button
+        id="info-trigger"
+        type="button"
+        class="info-button"
+        aria-label="Open project information"
+        aria-expanded="false"
+        aria-controls="project-info-dialog"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-4" />
+          <path d="M12 8h.01" />
+        </svg>
+      </button>
+
+      <div id="modal-overlay" class="modal-overlay" hidden>
+        <div id="modal-backdrop" class="modal-backdrop" aria-hidden="true"></div>
+
+        <section
+          id="project-info-dialog"
+          class="modal-window"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Project Information"
+        >
+          <header class="modal-header">
+            <h1 class="modal-title">Project Information</h1>
+            <button
+              id="info-close"
+              type="button"
+              class="close-button"
+              aria-label="Close project information"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </header>
+
+          <div class="modal-body">
+            <dl class="meta-list">
+              <div class="meta-row">
+                <dt class="meta-label">Name(s)</dt>
+                <dd class="meta-value">Tien Hoang Cong</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-label">Group Name</dt>
+                <dd class="meta-value">Double Hoang</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-label">Group Members' Names</dt>
+                <dd class="meta-value">Tien Hoang Cong</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-label">Course</dt>
+                <dd class="meta-value">COMM2754 Digital Media Specialization 1</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-label">Affiliation</dt>
+                <dd class="meta-value">
+                  RMIT University Vietnam, Saigon South Campus, School of Communication and Design, Digital Media- Program
+                </dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-label">Date</dt>
+                <dd class="meta-value">20/11/2026</dd>
+              </div>
+              <div class="meta-row">
+                <dt class="meta-label">UN Sustainable Development Goal</dt>
+                <dd class="meta-value">
+                  SDG 11 - Make cities and human settlements inclusive, safe, resilient and sustainable
+                </dd>
+              </div>
+            </dl>
+
+            <div class="editorial-column">
+              <figure class="quote-block">
+                <blockquote class="quote-text">
+                  “The way we tend to use resources is we extract them, we turn them into short-life products and then dispose of them. . . In ecosystems, the waste from one organism becomes the nutrient for something else in that system.”
+                </blockquote>
+                <figcaption class="quote-reference">
+                  Pawlyn, M. (2010), ‘Using Nature’s Genius in Architecture’, TEDSalon London.
+                </figcaption>
+              </figure>
+
+              <p class="connection-paragraph">
+                The way we tend to use resources is we extract them, we turn them into short-life products and then dispose of them. . . In ecosystems, the waste from one organism becomes the nutrient for something else in that system" Pawlyn, M. (2010), ‘Using Nature’s Genius in Architecture’, TEDSalon London. Michael Pawlyn, a British architect specialising in biomimicry and sustainable design challenges the linear approach to the way we design, consume, and manage resources. His statement shed light on a motto "nature as the model and human development as the part of this model" for interconnection, resource circulation and regeneration. This idea aligns with the Sustainable Development Goal 11 set by the United Nations: Sustainable Cities and Communities, which calls for cities and human settlements to become inclusive, safe, resilient, and sustainable. Moreover, it is about reflecting on how urban systems function should coexist with the natural environment. When these messages are overlooked, sustainability is easily misunderstood as an action for reducing consumerism and damage, not a system where people, infrastructure, resources and nature support one another. This project demonstrates the similarity between human system and ecosystem development to vindicate that rather than function as an isolated system, the living city should function as an interconnected living ecosystem, where resources circulate, communities cooperate and systems adapt to environmental changes. Learn from nature, leave no waste behind, repurpose what is already built .
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
